@@ -1,16 +1,16 @@
-import React from 'react'
+import React from 'react';
+import '../styles/objectiveSection.css'
 
 function ObjectiveSection(props) {
-  const { objective, objectiveEdit } = props
-
+  const { objective, editObjective } = props
 
 
   return (
     <div className='objective-section'>
-      { objectiveEdit ? 
-        <input type='text' placeholder='Objective' style={editMode}/> 
+      { editObjective ? 
+        <input type='text' placeholder='Objective'/> 
         :
-        <span style={viewMode} className='objective-text'>{objective}</span>
+        <span className='objective-text'>{objective}</span>
       }
     </div>
   )

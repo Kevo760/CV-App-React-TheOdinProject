@@ -1,0 +1,9 @@
+.objective-section {
+    margin-top: 3rem;
+}
+
+.objective-section input {
+    width: 100%;
+    height: 3rem;
+    padding-left: .5rem;
+}

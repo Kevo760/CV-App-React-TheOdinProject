@@ -1,0 +1,34 @@
+.experiences-section {
+    margin-top: 3rem;
+}
+
+
+.jobs {
+    margin-top: 1rem;
+    padding-left: 3rem;
+    border-left: 2px dotted gray;
+}
+
+.dates-text {
+    font-weight: bold;
+}
+
+.jobTitle-text {
+    color: green;
+    font-weight: bold;
+}
+
+
+.job-section p {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    margin-bottom: .4rem;
+    margin-top: .1rem;
+}
+
+.companyName-text {
+    font-weight: bold;
+    color: rgb(134, 134, 134);
+}
+

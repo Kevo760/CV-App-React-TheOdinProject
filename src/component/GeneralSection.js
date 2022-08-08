@@ -1,9 +1,9 @@
 import React from 'react';
-import { FiEdit } from 'react-icons/fi'
+import '../styles/generalSection.css'
+
 
 function GeneralSection(props) {
     const {general, editGeneral} = props
-
 
     let viewMode = {}
     let editMode = {}
@@ -25,13 +25,13 @@ function GeneralSection(props) {
         style={editMode}
          />
          <div className='contact'>
-            <span className='phone-text' style={viewMode}>{general.number}</span>
+            <span className='phone-text' style={viewMode}>{general.phone}</span>
             <input 
             type='text'
             placeholder='Phone Number'
             style={editMode}
             />
-
+            ·
             <span className='email-text' style={viewMode}>{general.email}</span>
             <input
             type='text'

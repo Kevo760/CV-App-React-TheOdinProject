@@ -1,0 +1,30 @@
+.educations-section {
+    margin-top: 3rem;
+}
+
+.schools {
+    margin-top: 1rem;
+    padding-left: 3rem;
+    border-left: 2px dotted gray;
+}
+
+.dateOfStudy-text {
+    font-weight: bold;
+}
+
+.school-section p {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    margin-top: .2rem;
+}
+
+.studyTitle-text {
+    color: green;
+    font-weight: bold;
+}
+
+.schoolName-text {
+    font-weight: bold;
+    color: rgb(134, 134, 134);
+}
