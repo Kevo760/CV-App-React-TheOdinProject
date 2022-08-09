@@ -32,3 +32,13 @@
     color: rgb(134, 134, 134);
 }
 
+.jobUI {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.job-section {
+   margin-right: auto;
+}
+

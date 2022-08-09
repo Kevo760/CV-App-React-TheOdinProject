@@ -1,22 +1,17 @@
 import React from 'react';
-import { RiDeleteBack2Line } from 'react-icons/ri'
+import { AiFillDelete } from 'react-icons/ai'
 
 function SchoolUI(props) {
     const { education, editEducation } = props
 
-    let editMode = {}
-    
-    if(!editEducation) {
-      editMode.display ='none'
-    }
 
   return (
-    <div>
+    <div className='schoolUI'>
         <div className='school-section'>
             <span className='dateOfStudy-text'>{education.dateOfStudy}</span>
             <p><span className='studyTitle-text'>{education.studyTitle},</span><span className='schoolName-text'>{education.schoolName}</span></p>
         </div>
-        <RiDeleteBack2Line className='delete-icon' style={editMode}/>
+        {editEducation ? <AiFillDelete className='delete-icon'/> : null}
     </div>
   )
 }
