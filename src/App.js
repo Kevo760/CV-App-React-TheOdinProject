@@ -2,7 +2,7 @@ import './App.css';
 import React, { Component } from 'react'
 import Header from './component/Header';
 import { EditToggle } from './component/EditToggle';
-import GeneralSection from './component/GeneralSection';
+import GeneralSection from './component/GeneralSection/GeneralSection';
 import ObjectiveSection from './component/ObjectiveSection';
 import ExperienceSection from './component/Experience/ExperienceSection';
 import EducationSection from './component/Education/EducationSection';
@@ -91,10 +91,30 @@ constructor(props) {
   }
 }
 
+// handleGeneralChange = e => {
+//   let name = e.target.name
+//   let value = e.target.value
+
+//   let newGeneral = {
+//     ...this.state.general,
+//     [name]: value
+//   }
+
+//   this.setState({
+//     general : newGeneral
+//   })
+// }
+
 handleGeneralChange = e => {
-  this.setState({
-    general: { [e.target.name]: e.target.value }
-  })
+  let name = e.target.name
+  let value = e.target.value
+
+  this.setState(prevState => ({
+    general : {
+      ...prevState.general,
+      [name]: value
+    }
+  }))
 }
 
 changeGeneralEdit = () => {
@@ -109,9 +129,9 @@ render() {
       <div>
 
         <Header />
-
+      <button onClick={() => console.log(this.state)}>Click Me</button>
         <div className='Cv-section'>
-          <GeneralSection general={this.state.general} editGeneral={this.state.editGeneral} handleGeneralChange={this.handleGeneralChange} changeGeneralEdit={this.changeGeneralEdit}/>
+          <GeneralSection general={this.state.general} editGeneral={this.state.editGeneral} handleGeneralChange={this.handleGeneralChange.bind(this)} changeGeneralEdit={this.changeGeneralEdit.bind(this)}/>
           <ObjectiveSection objective={this.state.objective} editObjective={this.state.editObjective}/>
           <ExperienceSection experiences={this.state.experiences} editExperience={this.state.editExperience}/>
           <EducationSection educations={this.state.educations} editEducation={this.state.editEducation}/>

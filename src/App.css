@@ -30,3 +30,12 @@ body {
 .delete-icon:hover {
     transform: scale(1.2);
 }
+
+.checkbox-icon {
+    cursor: pointer;
+    color: black;
+}
+
+.checkbox-icon:hover  {
+    transform: scale(1.2);
+}
