@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { FaRegCheckSquare } from 'react-icons/fa';
+import React from 'react';
+
 
 function PhoneInput(props) {
     const { general, handleGeneralChange } = props

@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import JobUI from './JobUI';
 import '../../styles/experienceSection.css'
+import {AiFillDelete} from 'react-icons/ai';
+import AddJob from './AddJob'
+
 
 
 function ExperienceSection(props) {
-    const {experiences, editExperience} = props
-    const jobs = experiences.map(experience => <JobUI key={experience.id} experience={experience} editExperience={editExperience}/>)
+  const {experiences} = props
+
+  const jobs = experiences.map(experience => <JobUI experience={experience} key={experience.id}/>)
 
   return (
     <div className='experiences-section'>

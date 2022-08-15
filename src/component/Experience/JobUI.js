@@ -1,8 +1,7 @@
 import React from 'react';
-import {AiFillDelete} from 'react-icons/ai';
 
 function JobUI(props) {
-    const { experience, editExperience } = props
+    const {experience} = props
 
 
   return (
@@ -12,7 +11,6 @@ function JobUI(props) {
             <p><span className='jobTitle-text'>{experience.positionTitle},</span><span className='companyName-text'>{experience.companyName}</span></p>
             <span className='mainTask-text'>{experience.mainTask}</span>
         </div>
-        {editExperience ? <AiFillDelete className='delete-icon'/> : null}
     </div>
   )
 }

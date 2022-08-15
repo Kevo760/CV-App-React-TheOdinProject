@@ -1,9 +1,17 @@
 .objective-section {
-    margin-top: 3rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .objective-section input {
     width: 100%;
     height: 2.5rem;
     padding-left: .5rem;
+}
+
+.edit-objective-btn {
+    width: 10rem;
+    padding: .5rem;
+    margin: 1rem auto;
 }

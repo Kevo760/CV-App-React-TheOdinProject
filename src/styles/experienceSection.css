@@ -4,9 +4,12 @@
 
 
 .jobs {
-    margin-top: 1rem;
     padding-left: 3rem;
     border-left: 2px dotted gray;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .dates-text {
@@ -40,5 +43,38 @@
 
 .job-section {
    margin-right: auto;
+}
+
+.edit-experience-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.edit-experience-section .delete-icon {
+    margin-left: auto;
+}
+
+.experience-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: .5rem;
+    gap: .5rem;
+}
+
+.experience-form input {
+    padding: .5rem;
+    font-family: inherit;
+}
+
+.experience-form .button-section {
+    margin: auto;
+    display: flex;
+    gap: .5rem;
+}
+
+.experience-form button {
+    padding: .4rem;
+    width: 10rem;
 }
 

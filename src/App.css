@@ -12,14 +12,15 @@ html {
 
 body {
     background-color: gainsboro;
+    padding-bottom: 1rem;
 }
 
 .Cv-section {
     width: 800px;
-    height: 1000px;
+    height: 100%;
     background-color: white;
     margin: 1rem auto;
-    padding: 4rem 4.5rem 1rem 4.5rem;
+    padding: 4rem 4.5rem 3rem 4.5rem;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
 
@@ -39,3 +40,10 @@ body {
 .checkbox-icon:hover  {
     transform: scale(1.2);
 }
+
+
+
+ .add-button {
+    margin: 1rem auto;
+    padding: .2rem;
+ }
