@@ -14,3 +14,13 @@ header {
 header h1 {
     text-align: center;
 }
+
+.preview-edit-btn {
+    margin-left: auto;
+}
+
+.preview-edit-btn button {
+    padding: .5rem;
+    cursor: pointer;
+    font-family: inherit;
+}

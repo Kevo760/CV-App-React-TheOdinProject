@@ -1,27 +1,18 @@
-import * as React from 'react';
-import ToggleButton from '@mui/material/ToggleButton';
-import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
-import '../styles/editToggle.css';
+import React from 'react';
 
-function EditToggle() {
-  const [alignment, setAlignment] = React.useState('edit');
 
-  const handleChange = (event, newAlignment) => {
-    setAlignment(newAlignment);
-  };
+function EditToggle(props) {
+  const {changeEdit, editMode} = props;
+
 
   return (
-    <ToggleButtonGroup
-      color="info"
-      value={alignment}
-      exclusive
-      onChange={handleChange}
-      size='small'
-      className='toggleGroup'
-    >
-      <ToggleButton value="edit">Edit</ToggleButton>
-      <ToggleButton value="preview">Preview</ToggleButton>
-    </ToggleButtonGroup>
+    <div className='preview-edit-btn'>
+      { editMode ?
+        <button onClick={changeEdit}>PREVIEW MODE</button>
+        :
+        <button onClick={changeEdit}>EDIT MODE</button>
+      }
+    </div>
   );
 }
 

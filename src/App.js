@@ -4,14 +4,14 @@ import Header from './component/Header';
 import GeneralSection from './component/GeneralSection/GeneralSection';
 import EditGeneralSection from './component/GeneralSection/EditGeneralSection';
 import ObjectiveSection from './component/Objective/ObjectiveSection';
-import editObjectiveSection from './component/Objective/EditObjectiveSection';
+import EditObjectiveSection from './component/Objective/EditObjectiveSection';
 import ExperienceSection from './component/Experience/ExperienceSection';
 import EditExperienceSection from './component/Experience/EditExperienceSection';
 import EducationSection from './component/Education/EducationSection';
 import EditEducationSection from './component/Education/EditEducationSection';
 import SkillSection from './component/Skills/SkillSection';
 import uniqid from 'uniqid';
-import EditObjectiveSection from './component/Objective/EditObjectiveSection';
+
 
 
 class App extends Component {
@@ -20,9 +20,9 @@ constructor(props) {
 
   this.state = {
      general: {
-      name: 'KEVIN DAVID',
-      email: 'Kevo@email.com',
-      phone: '760-000-0000',
+      name: 'Saltin Pepper',
+      email: 'S4ndw1chartist@sub.com',
+      phone: '123-345-1234',
      },
      objective: 'To apply for your NASA scientist role to make amazing sandwiches to bring peace to the Martians',
      experience: {
@@ -60,48 +60,44 @@ constructor(props) {
      experiences: [
       {
         companyName: 'Subway',
-        positionTitle: 'Sandwich Creator',
-        mainTask: 'Make bomb sandwiches',
+        positionTitle: 'Sandwich Master Creator',
+        mainTask: 'Make the perfect bomb sandwich that is cut to perfection with flavors that will give you sense of fulfillment.',
         dateHired: 'October 2011',
         dateQuit: 'Current',
         id: '1123',
        },
        {
-        companyName: 'Subway',
-        positionTitle: 'Sandwich Creator',
-        mainTask: 'Make bomb sandwiches',
-        dateHired: 'October 2011',
-        dateQuit: 'Current',
+        companyName: 'Quiznos',
+        positionTitle: 'Bread Maker',
+        mainTask: 'Make the softest bread that you can use it as a pillow and fall asleep on it. ',
+        dateHired: 'September 2010',
+        dateQuit: 'September 2011',
         id: '1124',
        }
      ],
      skills: [
       {
-        skillTitle: 'cooking',
+        skillTitle: 'Cooking',
         id: '1'
       },
       {
-        skillTitle: 'making that bread',
+        skillTitle: 'Making that bread',
         id: '2'
       },
       {
-        skillTitle: 'make customers laugh, make customers laugh, make customers laugh, make customers laugh',
+        skillTitle: 'Make customers laugh',
         id: '4'
       },
       {
-        skillTitle: 'make customers laugh',
+        skillTitle: 'I can cut onions without crying',
         id: '5'
       },
       {
-        skillTitle: 'make customers laugh',
+        skillTitle: 'King of upselling Quac',
         id: '6'
-      },
-      {
-        skillTitle: 'make customers laugh',
-        id: '7'
       }
      ],
-     editMode: false,
+     editMode: true,
   }
   this.handleGeneralChange = this.handleGeneralChange.bind(this);
   this.handleObjectiveChange = this.handleObjectiveChange.bind(this);
@@ -254,7 +250,7 @@ render() {
     return (
       <div>
 
-        <Header />
+        <Header changeEdit={this.changeEdit} editMode={editMode}/>
 
         <div className='Cv-section'>
 
