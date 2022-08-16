@@ -1,4 +1,3 @@
-
 import '../../styles/objectiveSection.css';
 
 function ObjectiveSection(props) {

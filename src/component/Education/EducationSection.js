@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import SchoolUI from './SchoolUI';
 import '../../styles/educationSection.css';
-import AddSchool from './AddSchool';
-import {AiFillDelete} from 'react-icons/ai';
+
 
 
 function EducationSection(props) {

@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../../styles/generalSection.css';
-import EmailInput from './EmailInput';
-import NameInput from './NameInput';
-import PhoneInput from './PhoneInput';
+
 
 
 

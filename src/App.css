@@ -26,6 +26,8 @@ body {
 
 .delete-icon {
     cursor: pointer;
+    width: 1rem;
+    height: 1rem;
 }
 
 .delete-icon:hover {

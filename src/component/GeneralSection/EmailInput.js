@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { FaRegCheckSquare } from 'react-icons/fa';
+import React from 'react';
+
 
 function EmailInput(props) {
     const { general, handleGeneralChange } = props
