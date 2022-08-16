@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/CV-App-React-TheOdinProject/static/css/main.aeae8cb2.css",
+    "main.js": "/CV-App-React-TheOdinProject/static/js/main.887b88dd.js",
+    "static/js/787.dbc30ae6.chunk.js": "/CV-App-React-TheOdinProject/static/js/787.dbc30ae6.chunk.js",
+    "index.html": "/CV-App-React-TheOdinProject/index.html",
+    "main.aeae8cb2.css.map": "/CV-App-React-TheOdinProject/static/css/main.aeae8cb2.css.map",
+    "main.887b88dd.js.map": "/CV-App-React-TheOdinProject/static/js/main.887b88dd.js.map",
+    "787.dbc30ae6.chunk.js.map": "/CV-App-React-TheOdinProject/static/js/787.dbc30ae6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aeae8cb2.css",
+    "static/js/main.887b88dd.js"
+  ]
+}
